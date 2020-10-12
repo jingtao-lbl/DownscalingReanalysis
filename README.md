@@ -20,7 +20,7 @@ A package for downscaling coarse-resolution reanalysis downward shortwave (solar
 -	Cloudiness correction to NARR solar data is conducted by reproducing the spatial pattern observed by GCIP SRB (GSRB) solar radiation product.
 -	The package temporally downscales 3-hourly shortwave radiation to hourly, relying on hourly solar zenith angle and the diurnal cycle (Equation 8 in Tao and Barros (2018)).
 -	Based on GSRB data, the package computes hourly transmittance to partition the hourly shortwave radiation to direct and diffuse components. 
--	Based on an existing topographic correction method (Dubayah and Loechel, 1997), the bash script uses the Image Processing Workbench (IPW) software (Frew, 1990) to compute the high-resolution illumination angle, sky view factor, and terrain configuration factor. Ancillary datasets include DEM and hourly albedo that can be derived from MODIS BRDF products (details can be found in Tao and Barros, 2019). 
+-	Based on an existing method modeling topographic solar radiation (Dubayah and Loechel, 1997), the bash script uses the Image Processing Workbench (IPW) software (Frew, 1990) to compute the high-resolution illumination angle, sky view factor, and terrain configuration factor. Ancillary datasets include DEM, hourly solar zenith angle, and hourly albedo that can be derived from MODIS BRDF products (details can be found in Tao and Barros, 2019). 
 -	Input the partitioned direct and diffuse components to IPW to perform the topographic correction to each component.
 
 # Reference 
