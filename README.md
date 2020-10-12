@@ -1,5 +1,6 @@
 # Algorithm Package For Downscaling Reanalysis Products
 By Jing Tao (jingtao@lbl.gov)
+
 Last update: October 12, 2020
 
 This package contains three components that assemble codes and scripts to downscale coarse-resolution reanalysis fields to high-resolution meteorological forcing for hydrological applications, especially over topographically complex regions. Using the 3-hourly North American Regional Reanalysis (NARR) as an example, the packages downscale 32-km  resolution NARR atmospheric temperature, atmospheric pressure, specific humidity, wind speed, downward longwave and shortwave radiation to 1-km and hourly resolution. Users can modify the codes to apply to any other reanalysis products.
