@@ -2,6 +2,7 @@
 This package contains three components that assembles codes for downscaling coarse-resolution reanalysis fields to high-resolution meteorological forcing for hydrological applications especially over topographically complex regions. Using the 3-hourly North American Regional Reanalysis (NARR) as an example, the packages downscale 32-km  resolution NARR atmospheric temperature, atmospheric pressure, specific humidity, wind speed, downward longwave and shortwave radiation to 1-km and hourly resolution. Users can modify the codes to apply to any other reanalysis products.
 
 Please check our article (Tao and Barros, 2018) for further details.
+
 Tao, Jing, and Ana P. Barros. "Multi-year atmospheric forcing datasets for hydrologic modeling in regions of complex terrain–Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of hydrology 567 (2018): 824-842. (https://doi.org/10.1016/j.jhydrol.2016.12.058)
 
 # ElevationCorrection
