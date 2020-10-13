@@ -2,9 +2,9 @@
 By Jing Tao (jingtao@lbl.gov)
 (Last updated on October 12, 2020)
 
-This repository contains three packages that assemble codes and scripts for downscaling coarse-resolution reanalysis fields while also accounting for topographic (and cloudiness) effects. The packages aim to generate high-resolution, high-accuracy meteorological forcing for hydrological applications, especially over topographically complex regions. Using the 3-hourly North American Regional Reanalysis (NARR) as an example, the packages downscale 32-km resolution NARR atmospheric temperature, atmospheric pressure, specific humidity, wind speed, downward longwave and shortwave radiation to 1-km and hourly resolution. The generated atmospheric forcing datasets have been used for hydrological forcasting practice (see Tao et al., 2016). Users can modify the codes to apply to any other reanalysis products.
+This repository contains three packages that assemble codes and scripts for downscaling coarse-resolution reanalysis fields while also accounting for topographic (and cloudiness) effects. The packages aim to generate high-resolution, high-accuracy meteorological forcing for hydrological applications, especially over topographically complex regions. Using the 3-hourly North American Regional Reanalysis (NARR) as an example, the packages downscale 32-km resolution NARR atmospheric temperature, atmospheric pressure, specific humidity, wind speed, downward longwave and shortwave radiation to 1-km and hourly resolution. The generated atmospheric forcing datasets have been used for hydrological modeling (Tao and Barros, 2018, 2019) and providing initials for hydrological forecasting practice (Tao et al., 2016). Users can modify the codes to apply to any other reanalysis products, e.g., the downscaling packages have been adapted by Rouf et al. (2020) to downscale the 1/8° North America Land Data Assimilation System version 2 (NLDAS-2) fields to 500-m resolution.
 
-Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at jingtao@lbl.gov if you have any questions.
+Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at jingtao@lbl.gov if you have any questions. 
 
 # - ElevationCorrection
 A package for elevation corrections to reanalysis atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
@@ -30,6 +30,8 @@ Tao, Jing, Di Wu, Jonathan Gourley, Sara Q. Zhang, Wade Crow, Christa Peters-Lid
 Tao, Jing, and Ana P. Barros. "Multi-year atmospheric forcing datasets for hydrologic modeling in regions of complex terrain–Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of Hydrology 567 (2018): 824-842. (https://doi.org/10.1016/j.jhydrol.2016.12.058)
 
 Tao, Jing, and Ana P. Barros. "Multi-year surface radiative properties and vegetation parameters for hydrologic modeling in regions of complex terrain—Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of Hydrology: Regional Studies 22 (2019): 100596. (https://doi.org/10.1016/j.ejrh.2019.100596)
+
+Rouf, Tasnuva, Yiwen Mei, Viviana Maggioni, Paul Houser, and Margaret Noonan. "A Physically Based Atmospheric Variables Downscaling Technique." Journal of Hydrometeorology 21, no. 1 (2020): 93-108.
 
 Frew, James Edward. "The image processing workbench." PhD diss., University of California, 1990.
 
