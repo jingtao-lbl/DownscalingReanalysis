@@ -9,7 +9,7 @@ Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at 
 # 1. ElevationCorrection
 A package for elevation corrections to coarse-resolution reanalysis fields, including atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
 -	Instead of using the standard lapse rate (i.e., - 6.5 K/km), the package derives dynamic lapse rates in space and time to downscale atmospheric temperature, accounting for elevation differences between the coarse-resolution terrain and high-resolution DEM.
-- The elevation correction for atmospheric pressure, specific humidity, and downward longwave radiation follow Cosgrove et al. (2003).
+- The elevation correction for atmospheric pressure, specific humidity, and downward longwave radiation follows Cosgrove et al. (2003).
 
 # 2. WindAdjustment
 A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity.
