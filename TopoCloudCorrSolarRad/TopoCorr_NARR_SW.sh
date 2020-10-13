@@ -1,12 +1,13 @@
 #!/bin/bash
-# -----------------------------------------------------------------
-# Ingesting the partitioned direct and diffuse components (already 
-# corrected for cloudiness); Calculating solar radiation over 
-# topographically complex terrain using IPW function toporad.
+# ----------------------------------------------------------------------------
+# Ingesting the partitioned direct and diffuse components (already corrected 
+# for cloudiness) and prepared ancillary data, including DEM, sky view and 
+# terrain configuration factors, illumination angles, and albedo, to calculate
+# solar radiation over topographically complex terrain.
 #
 # By Jing Tao, Duke University
 # Last updated: 10/10/2013
-# -----------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 data_dir=$HOME/HMT-SEUS/Mat/SEUS_NARR_1hr1km_UTM_SW_Anci
 out_dir=$HOME/HMT-SEUS/Mat/SEUS_NARR_1hr1km_UTM_CloudTopoCorrSW
