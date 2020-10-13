@@ -22,7 +22,7 @@ A package for downscaling coarse-resolution reanalysis downward shortwave (solar
 -	Based on an existing method modeling topographic solar radiation (Dubayah and Loechel, 1997), the bash scripts use the Image Processing Workbench (IPW) software (Frew, 1990; https://github.com/USDA-ARS-NWRC/ipw) to compute the illumination angle, sky view factor, and terrain configuration factor. Ancillary datasets include DEM, hourly solar zenith angle, and hourly albedo that can be derived from MODIS BRDF products (details can be found in Tao and Barros, 2019). 
 -	The package temporally downscales 3-hourly shortwave radiation to hourly, relying on hourly solar zenith angle and the diurnal cycle (Equation 8 in Tao and Barros (2018)).
 -	Based on GSRB data, the package computes hourly transmittance to partition the hourly shortwave radiation to direct and diffuse components. 
--	Input the partitioned direct and diffuse components to IPW to perform the topographic correction to each component.
+-	Input the partitioned direct and diffuse components to IPW to perform the topographic correction to each component and the total solar radiation over topographically complex terrain.
 
 # Reference 
 
