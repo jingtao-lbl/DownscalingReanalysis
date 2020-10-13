@@ -8,7 +8,7 @@ Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at 
 
 # - ElevationCorrection
 A package for elevation corrections to reanalysis atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
--	Instead of using the standard lapse rate (i.e., - 6.5 K/km), we derived dynamic lapse rates in space and time.
+-	Instead of using the standard lapse rate (i.e., - 6.5 K/km), the package derives dynamic lapse rates in space and time.
 
 # - WindAdjustment
 A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity.
