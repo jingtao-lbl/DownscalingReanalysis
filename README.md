@@ -7,8 +7,9 @@ This repository contains three packages that assemble codes and scripts to downs
 Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at jingtao@lbl.gov if you have any questions. 
 
 # 1. ElevationCorrection
-A package for elevation corrections to reanalysis atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
--	Instead of using the standard lapse rate (i.e., - 6.5 K/km), the package derives dynamic lapse rates in space and time.
+A package for elevation corrections to coarse-resolution reanalysis fields including atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
+-	Instead of using the standard lapse rate (i.e., - 6.5 K/km), the package derives dynamic lapse rates in space and time to downscale atmospheric temperature, accounting for elevation differences between the coarse-resolution terrain and high-resolution DEM.
+- The elevation correction for atmospheric pressure, specific humidity, and downward longwave radiation follow Cosgrove et al. (2003).
 
 # 2. WindAdjustment
 A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity.
@@ -32,6 +33,8 @@ Tao, Jing, and Ana P. Barros. "Multi-year atmospheric forcing datasets for hydro
 Tao, Jing, and Ana P. Barros. "Multi-year surface radiative properties and vegetation parameters for hydrologic modeling in regions of complex terrain—Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of Hydrology: Regional Studies 22 (2019): 100596. (https://doi.org/10.1016/j.ejrh.2019.100596)
 
 Rouf, Tasnuva, Yiwen Mei, Viviana Maggioni, Paul Houser, and Margaret Noonan. "A Physically Based Atmospheric Variables Downscaling Technique." Journal of Hydrometeorology 21, no. 1 (2020): 93-108.
+
+Cosgrove, Brian A., Dag Lohmann, Kenneth E. Mitchell, Paul R. Houser, Eric F. Wood, John C. Schaake, Alan Robock et al. "Real‐time and retrospective forcing in the North American Land Data Assimilation System (NLDAS) project." Journal of Geophysical Research: Atmospheres 108, no. D22 (2003).
 
 Frew, James Edward. "The image processing workbench." PhD diss., University of California, 1990.
 
