@@ -10,7 +10,7 @@ Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at 
 
 
 # 2. WindAdjustment
-A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity.
+A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity. Follow procedures in "Main_DownscalingNARR_WindAdjustment.m".
 -	Based on a high-resolution (e.g., 1 km) landcover map, the package first derives maps of roughness length and displacement height at the consistent spatial resolution. 
 -	The package then derives high-resolution friction velocity and then generates wind speeds adjusted for subgrid-scale variability (Equation 6 in Tao and Barros (2018)). 
 
