@@ -9,20 +9,11 @@ Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at 
 # 1. ElevationCorrection
 A package for elevation corrections to coarse-resolution reanalysis fields, including atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
 -	Instead of using the standard lapse rate (i.e., - 6.5 K/km), the package derives dynamic lapse rates in space and time to downscale atmospheric temperature, accounting for elevation differences between the coarse-resolution terrain and high-resolution DEM.
-- The elevation correction for atmospheric pressure, specific humidity, and downward longwave radiation follow Cosgrove et al. (2003).
+- The elevation correction for atmospheric pressure, specific humidity, and downward longwave radiation follows Cosgrove et al. (2003).
 
 # 2. WindAdjustment
-A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity.
--	Based on a high-resolution (e.g., 1 km) landcover map, the package first derives maps of roughness length and displacement height at the consistent spatial resolution. 
--	The package then derives high-resolution friction velocity and then generates wind speeds adjusted for subgrid-scale variability (Equation 6 in Tao and Barros (2018)). 
 
 # 3. TopoCloudCorrSolarRad 
-A package for downscaling coarse-resolution reanalysis downward shortwave (solar) radiation to high-resolution, accounting for topographic and cloudiness corrections.
--	By reproducing the large-scale spatial pattern observed by GCIP SRB (GSRB) solar radiation product, the package performs cloudiness correction to NARR solar data.
--	Based on an existing method modeling topographic solar radiation (Dubayah and Loechel, 1997), the bash scripts use the Image Processing Workbench (IPW) software (Frew, 1990; https://github.com/USDA-ARS-NWRC/ipw) to compute the illumination angle, sky view factor, and terrain configuration factor. Ancillary datasets include DEM, hourly solar zenith angle, and hourly albedo that can be derived from MODIS BRDF products (details can be found in Tao and Barros, 2019). 
--	The package temporally downscales 3-hourly shortwave radiation to hourly, relying on hourly solar zenith angle and the diurnal cycle (Equation 8 in Tao and Barros (2018)).
--	Based on GSRB data, the package computes hourly transmittance to partition the hourly shortwave radiation to direct and diffuse components. 
--	The shell scripts ingest the partitioned direct and diffuse components to IPW to perform the topographic correction to each component, and calculate the total solar radiation over topographically complex terrain.
 
 # Reference 
 
