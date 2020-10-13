@@ -7,7 +7,7 @@ This repository contains three packages that assemble Matlab codes and shell scr
 Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at jingtao@lbl.gov if you have any questions. 
 
 # 1. ElevationCorrection
-A package (see Main_DownscalingNARR_ElevationCorrection.m) for elevation corrections to coarse-resolution reanalysis fields, including atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
+A package for elevation corrections to coarse-resolution reanalysis fields, including atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation. Follow procedures in "Main_DownscalingNARR_ElevationCorrection.m".
 -	Instead of using the standard lapse rate (i.e., - 6.5 K/km), the package derives dynamic lapse rates in space and time to downscale atmospheric temperature, accounting for elevation differences between the coarse-resolution terrain and high-resolution DEM.
 - The elevation correction for atmospheric pressure, specific humidity, and downward longwave radiation follows Cosgrove et al. (2003).
 
