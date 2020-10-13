@@ -2,7 +2,7 @@
 By Jing Tao (jingtao@lbl.gov)
 (Last updated on October 12, 2020)
 
-This repository contains three packages that assemble codes and scripts for downscaling coarse-resolution reanalysis fields while also accounting for topographic (and cloudiness) effects. The packages aim to generate high-resolution, high-accuracy meteorological forcing for hydrological applications, especially over topographically complex regions. Using the 3-hourly North American Regional Reanalysis (NARR) as an example, the packages downscale 32-km resolution NARR atmospheric temperature, atmospheric pressure, specific humidity, wind speed, downward longwave and shortwave radiation to 1-km and hourly resolution. Users can modify the codes to apply to any other reanalysis products.
+This repository contains three packages that assemble codes and scripts for downscaling coarse-resolution reanalysis fields while also accounting for topographic (and cloudiness) effects. The packages aim to generate high-resolution, high-accuracy meteorological forcing for hydrological applications, especially over topographically complex regions. Using the 3-hourly North American Regional Reanalysis (NARR) as an example, the packages downscale 32-km resolution NARR atmospheric temperature, atmospheric pressure, specific humidity, wind speed, downward longwave and shortwave radiation to 1-km and hourly resolution. The generated atmospheric forcing datasets have been used for hydrological forcasting practice (see Tao et al., 2016). Users can modify the codes to apply to any other reanalysis products.
 
 Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at jingtao@lbl.gov if you have any questions.
 
@@ -24,7 +24,10 @@ A package for downscaling coarse-resolution reanalysis downward shortwave (solar
 -	Input the partitioned direct and diffuse components to IPW to perform the topographic correction to each component.
 
 # Reference 
-Tao, Jing, and Ana P. Barros. "Multi-year atmospheric forcing datasets for hydrologic modeling in regions of complex terrain–Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of Hydrology, 567 (2018): 824-842. (https://doi.org/10.1016/j.jhydrol.2016.12.058)
+
+Tao, Jing, Di Wu, Jonathan Gourley, Sara Q. Zhang, Wade Crow, Christa Peters-Lidard, and Ana P. Barros. "Operational hydrological forecasting during the IPHEx-IOP campaign–Meet the challenge." Journal of Hydrology 541 (2016): 434-456. (https://doi.org/10.1016/j.jhydrol.2016.02.019)
+
+Tao, Jing, and Ana P. Barros. "Multi-year atmospheric forcing datasets for hydrologic modeling in regions of complex terrain–Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of Hydrology 567 (2018): 824-842. (https://doi.org/10.1016/j.jhydrol.2016.12.058)
 
 Tao, Jing, and Ana P. Barros. "Multi-year surface radiative properties and vegetation parameters for hydrologic modeling in regions of complex terrain—Methodology and evaluation over the Integrated Precipitation and Hydrology Experiment 2014 domain." Journal of Hydrology: Regional Studies 22 (2019): 100596. (https://doi.org/10.1016/j.ejrh.2019.100596)
 
