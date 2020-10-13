@@ -6,16 +6,16 @@ This repository contains three packages that assemble codes and scripts for down
 
 Please check Tao and Barros (2018) for further details. Contact Dr. Jing Tao at jingtao@lbl.gov if you have any questions.
 
-# ElevationCorrection
+# - ElevationCorrection
 A package for elevation corrections to reanalysis atmospheric temperature, atmospheric pressure, specific humidity, and downward longwave radiation.
 -	Instead of using the standard lapse rate (i.e., - 6.5 K/km), we derived dynamic lapse rates in space and time.
 
-# WindAdjustment
+# - WindAdjustment
 A package for downscaling reanalysis wind speed from coarse-resolution to high-resolution, accounting for fine-resolution heterogeneity.
 -	Based on a high-resolution (e.g., 1 km) land cover map, the package first derives maps of roughness length and displacement height at the consistent spatial resolution. 
 -	The package then derives high-resolution friction velocity and then generates wind speeds adjusted for high-resolution subgrid variability (Equation 6 in Tao and Barros (2018)). 
 
-# TopoCloudCorrSolarRad 
+# - TopoCloudCorrSolarRad 
 A package for downscaling coarse-resolution reanalysis downward shortwave (solar) radiation to high-resolution, meanwhile accounting for topographic and cloudiness corrections.
 -	Cloudiness correction to NARR solar data is conducted by reproducing the spatial pattern observed by GCIP SRB (GSRB) solar radiation product.
 -	The package temporally downscales 3-hourly shortwave radiation to hourly, relying on hourly solar zenith angle and the diurnal cycle (Equation 8 in Tao and Barros (2018)).
